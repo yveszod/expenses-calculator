@@ -5,15 +5,19 @@ import IncomeExpenses from './components/IncomeExpenses';
 import TransList from './components/TransList';
 import AddTrans from './components/AddTRans';
 
+import { GlobalProvider } from './context/GlobalState';
+
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Balance />
-      <IncomeExpenses />
-      <TransList />
-      <AddTrans />
-    </div>
+    <GlobalProvider>
+      <div className="container">
+        <Header />
+        <Balance />
+        <IncomeExpenses />
+        <TransList />
+        <AddTrans />
+      </div>
+    </GlobalProvider>
   );
 }
 

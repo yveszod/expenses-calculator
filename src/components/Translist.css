@@ -1,0 +1,25 @@
+.trans_action_item_title{
+    font-weight: 200;
+    flex-grow: 1;
+}
+.trans_action_item_value{
+    font-weight: 600;
+}
+.trans_action_item{
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: .35em;
+}
+.trans_action_item:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 0;
+}
+.trans_action_item.positive:after {
+    background: #42c547;
+}
+.trans_action_item.negative:after {
+    background: #e01d0e;
+}
